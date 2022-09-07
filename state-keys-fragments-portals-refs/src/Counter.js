@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DivPrinter from "./DivPrinter";
 const Counter = () => {
   let [count, setCount] = useState(0);
   console.log('counter', count);
@@ -8,7 +9,7 @@ const Counter = () => {
   return (
     <>
       <button onClick={clickHandler}>Click me</button>
-      <div>counter: {count}</div>
+      <DivPrinter value={`counter: ${count}`}/>
     </>
   );
 };
