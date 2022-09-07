@@ -5,7 +5,7 @@ const Welcome = (props) => {
   const style = {color: 'red'};
   return (
     <div className={props.className}>
-      <div >Welcome {props.name}</div>
+      <div>Welcome {props.name}</div>
       <div style={style}></div>
       <Comment styleData={style}>
         <div>{text}</div>
